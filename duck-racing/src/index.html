@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>🦆 Duck Racing 🦆</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <!-- <audio id="duck_mp3" autoplay="false" playing="false" hidden="hidden">
+      <source src="Ducks Feeding.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+   </audio> -->
+    <template id="member_template">
+      <h1>Select Members</h1>
+      <ul id="members"></ul>
+      <input type="number" min="1" max="21" value="21">
+      <button onclick="start()">GO</button>
+    </template>
+
+    <template id="list_item_template">
+      <li><input type="checkbox" name="members" checked> <label></label></li>
+    </template>
+
+    <template id="racing_field_template">
+      <h1>Duck Racing</h1>
+      <div>
+        <div class="racing_duck_dummny"></div>
+      </div>
+      <div id="count_down" class="racing_count_down"></div>
+    </template>
+
+    <template id="racing_lane_template">
+      <div class="racing_lane">
+        <label class="racing_lane_name"></label>
+        <div class="racing_duck" style="width: 0px;"></div>
+      </div>
+    </template>
+
+    <template id="racing_score_template">
+      <div class="racing_score">
+        <h1>Ranking</h1>
+        <ol id="scores"></ol>
+        <button onclick="reset()">RESTART</button>
+      </div>
+    </template>
+
+    <template id="racing_score_item_template">
+      <li class="racing_score_item"></li>
+    </template>
+
+    <div id="content"></div>
+  </body>
+</html>

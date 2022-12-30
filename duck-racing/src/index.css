@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'Press Start 2P';
+  src: url('PressStart2P-Regular.woff') format('woff');
+ }
+
+body {
+  font-family: 'Press Start 2P', sans-serif;
+  margin: auto;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+BUTTON {
+  font-family: 'Press Start 2P', sans-serif;
+  width: 200px;
+  height: 30px;
+  font-size: 16px;
+}
+
+INPUT[type=number] {
+  font-family: 'Press Start 2P', sans-serif;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+}
+
+#content {
+  width: 100%;
+  height: 100%;
+}
+
+.racing_lane_name {
+  clear: left;
+  width: 100px;
+}
+
+.duck {
+  display: absolute;
+  font-size: larger;
+  text-align: right;
+}
+
+.racing_lane {
+  width: 100%;
+  height: 20px;
+  border-bottom: #333 thin solid;
+  /*outline: #333 thin solid;*/
+  clear: both;
+}
+
+.racing_score {
+  position: fixed;
+  left: 50px;
+  right: 50px;
+  top: 50px;
+  bottom: 50px;
+  padding: 50px;
+  font-size: larger;
+  background-color: rgba(50, 50, 50, .8);
+}
+
+.racing_score LI {
+  color: orange;
+  margin: 10px;
+}
+
+.racing_count_down {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  font-size: 120px;
+}
+
+.racing_duck_dummny {
+  float: right;
+  clear: right;
+  width: 500px;
+  height: 20px;
+  text-align: left;
+  /*outline: #333 thin solid;*/
+}
+
+.racing_duck_dummny::before {
+  content: "🎌";
+  font-size: x-large;
+}
+
+.racing_duck {
+  float: right;
+  clear: right;
+  text-align: left;
+  /*outline: #333 thin solid;*/
+}
+
+.racing_duck::before {
+  content: "🦆";
+  font-size: x-large;
+}
